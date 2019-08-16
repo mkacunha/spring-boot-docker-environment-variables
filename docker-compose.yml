@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      VARIABLE_VALUE: Docker Compose Environment
+      VARIABLE_ARRAY: Docker Compose Environment 1, Docker Compose Environment 2
+

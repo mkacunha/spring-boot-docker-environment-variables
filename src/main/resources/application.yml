@@ -1,0 +1,3 @@
+variable:
+  value: ${VARIABLE_VALUE:Default Value}
+  array: ${VARIABLE_ARRAY:Default Value 1, Default Value 2}
