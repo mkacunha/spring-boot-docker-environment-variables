@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  app:
+    image: demo-docker-enviroment-variables
+    secrets:
+      - environment-secret
+secrets:
+  environment-secret:
+    external: true

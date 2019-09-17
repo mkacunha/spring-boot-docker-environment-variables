@@ -15,9 +15,6 @@ public class Application implements CommandLineRunner {
 	@Value("${variable.value}")
 	private String value;
 
-	@Value("${variable.array}")
-	private String[] array;
-
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
@@ -25,7 +22,5 @@ public class Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		LOGGER.info(value);
-		LOGGER.info(array[0]);
-		LOGGER.info(array[1]);
-	}
+}
 }
